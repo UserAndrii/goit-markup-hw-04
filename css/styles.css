@@ -149,6 +149,7 @@ p {
 img {
   display: block;
   min-width: 100%;
+  height: auto;
 }
 
 .hero-title {
@@ -327,7 +328,7 @@ img {
   color: var(--hover-accent-color);
 }
 
-/* ---PORTFOLIO STYLES--- */
+/* ----------PORTFOLIO STYLES---------- */
 /* FILTER */
 .filter-list {
   display: flex;
@@ -387,15 +388,21 @@ img {
 
 .project-link {
   text-decoration: none;
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-content {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-title {
