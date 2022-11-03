@@ -21,7 +21,7 @@ body {
   background-color: #ffffff;
   color: var(--title-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -66,7 +66,7 @@ body {
 .logo {
   color: #000000;
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -114,6 +114,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-link:hover,
@@ -134,11 +142,7 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -223,6 +227,23 @@ img {
 
 .features-item:not(:last-child) {
   margin-right: var(--card-set-gap);
+}
+
+.features-stone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-second-color);
+  border-radius: 4px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: var(--card-set-gap);
+}
+
+.features-icon {
+  display: block;
 }
 
 .features-title {
